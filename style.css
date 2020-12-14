@@ -1,0 +1,76 @@
+body {
+    background-color: khaki;
+}
+
+.red {
+    color: red;
+}
+
+table {
+    border: 1px solid #e05b0d;
+}
+
+th {
+    border: 1px solid #e05b0d;
+}
+
+td {
+    border: 1px solid #e05b0d;
+}
+
+
+.catside a:hover {
+    background: #85677e; color: #07fcfc;
+}
+
+.first_indent {
+    line-height: normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.style {
+    list-style-type: none; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 2px solid #085c16;
+    width: 300px;
+}
+
+label {
+    float: left;
+    width: 40%;
+}
+
+.butt {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    }
+   
+.padmar {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e05b0d;
+}    
+
+.left_1 {
+    margin: 0 6px 6px 0;
+    float: left;
+}
+
+
+.right_2 {
+    background-position: bottom right;
+}
+
+
