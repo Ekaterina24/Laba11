@@ -8,19 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="css/style-1.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("button").click(function () {
-        $(".center").hide();
-      });
-    });
-  </script>
   <style>
     a {
       text-decoration: none;
     }
-  </style>
-  <style>
+
     body {
       margin: 0;
       width: 100%;
@@ -39,10 +31,11 @@
     li:first-child {
       color: orangered;
     }
+
+    .First {
+      color: blue;
+    }
   </style>
-
-
-
 </head>
 
 <body>
@@ -71,10 +64,13 @@
 
 
 
+
     <h2>Меня зовут Рыкова Екатерина Дмитриевна</h2>
+
+
     <p style="font: 20pt Courier New; background-color: brown; display: inline;">Я начинающий верстальщик</p>
     <h3 style="padding-top: 10px;">Цитаты известных людей</h3>
-    <div class="first_indent">У вас будут неудачи. У вас будут травмы. Вы будете ошибаться.</div><br />
+    <div class="first_indent" id="d1">У вас будут неудачи. У вас будут травмы. Вы будете ошибаться.</div><br />
     У вас будут периоды депрессии и отчаяния.<br />
     Семья, учеба, работа, проблемы быта – все это не раз и не два станет помехой тренингу.<br />
     Однако стрелка вашего внутреннего компаса должна всегда показывать одно и тоже направление – к цели. <br />
@@ -93,7 +89,7 @@
     </div>
     <div style="padding-top: 30px;">Если останавливаться всякий раз, когда тебя оскорбляют или в тебя плюются,<br>
       то ты никогда не дойдешь до места, куда тебе надо попасть.<br>
-      <h3 class="sty">Тибор Фишер</h3>
+      <h3>Тибор Фишер</h3>
     </div>
 
 
@@ -153,8 +149,15 @@
 
     <button class="submit butt" type="submit">Отправить</button>
 
-
   </main>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(".center").hide();
+      });
+    });
+    $('#d1').addClass('First');
+  </script>
 </body>
 
 </html>
