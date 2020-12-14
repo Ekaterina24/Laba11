@@ -12,10 +12,20 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    #draggable {
+      width: 150px;
+      height: 150px;
+      padding: 0.5em;
+    }
+  </style>
   <script>
     $(function () {
       $("#datepicker").datepicker();
+    });
+    $(function () {
+      $("#draggable").draggable();
     });
   </script>
 
@@ -85,6 +95,7 @@
     <h2>Меня зовут Рыкова Екатерина Дмитриевна</h2>
 
 
+
     <p style="font: 20pt Courier New; background-color: brown; display: inline;">Я начинающий верстальщик</p>
     <h3 style="padding-top: 10px;" id="h1">Цитаты известных людей</h3>
     <div class="first_indent" id="d1"><button id="b1" style="padding: 5px;margin: 5px;">Добавить класс</button><button
@@ -111,12 +122,16 @@
       Терпение – вот ключ к победе.<br>
       <h3>Ник Вуйчич</h3>
     </div>
+
+
     <div style="padding-top: 30px;">Если останавливаться всякий раз, когда тебя оскорбляют или в тебя плюются,<br>
       то ты никогда не дойдешь до места, куда тебе надо попасть.<br>
       <h3 id="h2">Тибор Фишер</h3>
     </div>
 
-
+    <div id="draggable" class="ui-widget-content">
+      <p>ПЕРЕНЕСИ МЕНЯ</p>
+    </div>
 
 
     <p class="red" style="padding-top: 10px; padding-bottom: 10px;text-decoration: underline;" id="p1">Чем я увлекаюсь?
