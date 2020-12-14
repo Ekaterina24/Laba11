@@ -70,7 +70,10 @@
 
     <p style="font: 20pt Courier New; background-color: brown; display: inline;">Я начинающий верстальщик</p>
     <h3 style="padding-top: 10px;">Цитаты известных людей</h3>
-    <div class="first_indent" id="d1">У вас будут неудачи. У вас будут травмы. Вы будете ошибаться.</div><br />
+    <div class="first_indent" id="d1"><button id="b1" style="padding: 5px;margin: 5px;">Добавить класс</button><button
+        id="b2" style="padding: 5px;">Удалить
+        класс</button><br />У вас будут неудачи. У вас будут
+      травмы. Вы будете ошибаться.</div><br />
     У вас будут периоды депрессии и отчаяния.<br />
     Семья, учеба, работа, проблемы быта – все это не раз и не два станет помехой тренингу.<br />
     Однако стрелка вашего внутреннего компаса должна всегда показывать одно и тоже направление – к цели. <br />
@@ -95,7 +98,8 @@
 
 
 
-    <p class="red" style="padding-top: 10px; padding-bottom: 10px;text-decoration: underline;">Чем я увлекаюсь?</p>
+    <p class="red" style="padding-top: 10px; padding-bottom: 10px;text-decoration: underline;" id="p1">Чем я увлекаюсь?
+    </p>
 
     <ul class="style">
       <li>изучаю PYTHON</li>
@@ -147,16 +151,22 @@
     </fieldset>
 
 
-    <button class="submit butt" type="submit">Отправить</button>
+    <button class="submit butt" type="submit" id="b3">Отправить</button>
 
   </main>
   <script type="text/javascript">
     $(document).ready(function () {
-      $("button").click(function () {
+      $("#b3").click(function () {
         $(".center").hide();
       });
     });
-    $('#d1').addClass('First');
+    $("#b1").click(function () {
+      $('#d1').addClass('First');
+    })
+    $("#b2").click(function () {
+      $('#d1').removeClass('First');
+    })
+
   </script>
 </body>
 
