@@ -140,7 +140,7 @@
         </tr>
       </tbody>
     </table>
-
+    <form></form>
     <fieldset>
       <legend>
         <h2>Для связи со мной</h2>
@@ -157,8 +157,10 @@
       </div>
 
     </fieldset>
+    </form>
 
 
+    <button type="submit" id="b6">Кликни, чтобы создать копию кнопки</button><br>
     <button class="submit butt" type="submit" id="b3">Отправить</button>
 
   </main>
@@ -190,7 +192,9 @@
       $("h2").html("Hello <b>world</b>!")
     });
     $('#h2').after("<p>Новый параграф</p>");
-
+    $("#b6").click(function () {
+      $("#b6").clone().appendTo("main");
+    });
   </script>
 </body>
 
